@@ -9,7 +9,7 @@ type IProps = StaticScreenProps<{
 
 export function PostDetailScreen({ route }: IProps) {
   return (
-    <View style={{ padding: 16 }}>
+    <View style={{ padding: 16, flex: 1 }}>
       <PostDetail id={route.params.id} />
     </View>
   );

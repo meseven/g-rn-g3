@@ -13,11 +13,11 @@ export function UserItem({ user }: IProps) {
   return (
     <TouchableOpacity
       style={styles.btn}
-      onPress={() => navigation.navigate("UserDetail", { id: user.id, name: user.name })}
+      onPress={() =>
+        navigation.navigate("UserDetail", { id: user.id, name: user.name })
+      }
     >
       <Text style={styles.btnText}>{user.name}</Text>
     </TouchableOpacity>
   );
 }
-
-
